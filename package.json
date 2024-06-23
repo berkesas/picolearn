@@ -1,21 +1,46 @@
 {
-  "name": "eout",
+  "name": "picolearn",
+  "description": "Application to share learning resources",
   "version": "0.1.0",
+  "author": "Nazar Mammedov",
+  "license": "ISC",
   "private": true,
-  "dependencies": {
+  "main": "main.js",
+  "homepage": ".",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "electron": "^21.2.0",
+    "sass": "^1.59.3",
     "web-vitals": "^2.1.4"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
+    "decompress": "^4.2.1",
+    "electron-squirrel-startup": "^1.0.0",
+    "html-react-parser": "^3.0.14",
+    "i18next": "^23.11.5",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^14.1.2",
+    "react-router-dom": "^6.9.0",
+    "react-scripts": "5.0.1",
+    "uuid": "^9.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start-electron": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "electron-dev": "electron ."
   },
   "eslintConfig": {
     "extends": [

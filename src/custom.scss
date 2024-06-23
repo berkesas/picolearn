@@ -1,0 +1,45 @@
+/* make the customizations */
+// $body-bg: #000;
+// $body-color: #111;
+
+// $theme-colors: (
+//   // "primary": #fed09e,
+//   // "danger": #ff4136,
+// );
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap.scss";
+
+.button {
+  cursor: pointer;
+}
+
+
+
+.main-title {
+  color: darkgreen;
+  font-weight: bold;
+}
+
+.menuitem {
+  font-weight: bold;
+  color: $blue-500;
+}
+
+.booktile{
+    width: 10rem;
+}
+
+.tiles {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px 10px;
+}
+
+.tile_image {
+  width: 100px;
+  height: 100px;
+  margin:1rem;
+  align-self: center;
+  object-fit: cover;
+}

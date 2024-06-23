@@ -1,0 +1,10 @@
+{
+  "title": "Picolearn",
+  "menus": [
+    {
+      "key": 1,
+      "text": "Home",
+      "href": "/"
+    }
+  ]
+}

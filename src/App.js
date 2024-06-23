@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./custom.scss";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import NavPanel from "./components/NavPanel";
+import Main from "./pages/Main";
+import appData from "./data/data.json";
+import { DataContext } from "./DataContext.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DataContext.Provider value={appData}>
+      <HashRouter>
+        <div className="App">
+          <header className="App-header">
+            <NavPanel />
+          </header>
+          <Routes basename={"/"}>
+            <Route path="/" element={<Main />} />
+          </Routes>
+        </div>
+      </HashRouter>
+    </DataContext.Provider>
   );
 }
 
