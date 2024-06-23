@@ -1,7 +1,9 @@
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import { useTranslation, Trans } from 'react-i18next';
 
 export default function ModalWindow(props) {
+  const { t, i18n } = useTranslation();
   return (
     <Modal
       {...props}
@@ -18,8 +20,8 @@ export default function ModalWindow(props) {
         <p>{props.message}</p>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={props.onConfirm}>Hawa</Button>
-        <Button onClick={props.onHide}>Ýap</Button>
+        <Button onClick={props.onConfirm}>{t('Yes')}</Button>
+        <Button onClick={props.onHide}>{t('No')}</Button>
       </Modal.Footer>
     </Modal>
   );

@@ -17,7 +17,9 @@ const resources = {
             "Search": "Search",
             "Refresh": "Refresh",
             "confirm delete question": "Are you sure you want to delete <strong>{{title}}</strong>?",
-            "<0>Installed packages</0>": "<0>Installed packages</0>"
+            "<0>Installed packages</0>": "<0>Installed packages</0>",
+            "Yes":"Yes",
+            "No": "No"
         }
     },
     tk: {
@@ -32,7 +34,9 @@ const resources = {
             "Search": "Gözle",
             "Refresh": "Täzele",
             "confirm delete question": "<strong>{{title}}</strong> kitaby çyndanam pozmalymy?",
-            "<0>Installed packages</0>": "<0>Gurnalan toplumlar</0>"
+            "<0>Installed packages</0>": "<0>Gurnalan toplumlar</0>",
+            "Yes":"Hawa",
+            "No": "Ýok"
         }
     }
 };

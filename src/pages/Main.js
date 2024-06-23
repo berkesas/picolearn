@@ -44,7 +44,8 @@ function Main() {
     setSelectedBook(book);
     const newModalData = { ...modalData };
     newModalData.title = t('Confirm delete');
-    newModalData.message = parse(t('confirm delete question', { title: book.data.title }));
+    const message = t('confirm delete question', { title: book.data.title });
+    newModalData.message = parse(message);
     setModalData(newModalData);
     setModalShow(true);
   };
